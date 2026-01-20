@@ -1,68 +1,71 @@
-📦 ReValu — Loyalty to Crypto Conversion Platform (MVP)
+# ReValu — Loyalty to Crypto Conversion Platform (MVP)
 
-Turn your rewards into wealth.
+> Turn your rewards into wealth.
 
 ReValu enables users to convert loyalty rewards (eBucks, UCount, Discovery Miles, etc.) into cryptocurrency via exchange partners.
 
-🚀 MVP Scope
+---
+
+## 🚀 MVP Scope
 
 The MVP focuses on:
 
-Connecting loyalty accounts
+- Connecting loyalty accounts
+- Aggregating point balances
+- Converting points into ZAR value
+- Executing crypto purchase via exchange partner
+- Depositing assets into user wallet
 
-Aggregating point balances
+---
 
-Converting points into ZAR value
+## 🧩 Architecture (MVP)
 
-Executing crypto purchase via partner exchange
-
-Depositing assets into user wallet
-
-🧩 Architecture (MVP)
 [Loyalty Provider] → ReValu → [Crypto Exchange]
 
-Core MVP Components:
+pgsql
+Copy code
 
-Front-End Client (Mobile/Web)
+**Core MVP Components:**
 
-Loyalty Integration Service
+- Front-End Client (Mobile/Web)
+- Loyalty Integration Service
+- Crypto Exchange Service
+- Conversion Engine
 
-Crypto Exchange Service
+---
 
-Conversion Engine
+## 🏗️ Tech Components (MVP)
 
-🏗️ Tech Components (MVP)
-Front-End
+### Front-End
+- React Native (Mobile MVP)
+- Next.js (Optional Web)
 
-React Native (Mobile MVP)
+### Backend
+- Loyalty Integration Service
+- Exchange Integration Service
+- Conversion Logic
 
-Next.js (Optional Web)
+---
 
-Backend
+## 🔌 Integrations (MVP Targets)
 
-Loyalty Integration Service
+### Loyalty
+- Banking rewards (initial)
 
-Exchange Integration Service
+### Exchange
+- Buy Order
+- Wallet Deposit
 
-Conversion Logic
+**Initial exchange target:** Luno
 
-🔌 Integrations (MVP Targets)
-Loyalty
+---
 
-Banking rewards (initial)
+## 💰 Revenue Model (MVP)
 
-Exchange
+- Conversion Fee: **1–2% per conversion** (shared with exchange partner)
 
-Buy Order
+---
 
-Wallet Deposit
-
-Initial exchange target: Luno
-
-💰 Revenue Model (MVP)
-
-Conversion Fee: 1–2% per conversion (shared with exchange partner)
-
-🌍 Vision (Post-MVP)
+## 🌍 Vision (Post-MVP)
 
 Enable users to grow wealth using existing rewards while helping partners reduce liability and increase engagement.
